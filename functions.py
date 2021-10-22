@@ -9,6 +9,11 @@ def sigmoid(z):
 def sigmoid_prime(z):
   return sigmoid(z)*(1.0-sigmoid(z))
 
+#def mse(a, y):
+#  return .5*sum((a[i]-y[i])**2 for i in range(10))[0]
+
 def mse(a, y):
-  return .5*sum((a[i]-y[i])**2 for i in range(10))[0]
+  print(a)
+  print(y)
+  return .5*(a[0]-y[0])**2
 
